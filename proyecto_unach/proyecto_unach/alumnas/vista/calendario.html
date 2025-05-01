@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mujeres Universitarias</title>
+    <link rel="stylesheet" href="calendario.css">
+
+</head>
+<body>
+    <div class="contenedor-form">
+    <form>
+        <label for="hora" class="formulario__label">Hora:</label>
+        <input type="time" id="hora" class="formulario__input" required>
+
+        <label for="matricula" class="formulario__label">Matrícula:</label>
+        <input type="text" id="matricula" class="formulario__input" required>
+
+        <label for="notaTexto" class="formulario__label">Motivo:</label>
+        <textarea id="notaTexto" class="formulario__textarea" placeholder="Motivo de la cita..." required></textarea>
+
+        <button type="submit" class="formulario__boton formulario__boton--guardar" id="botonGuardar">Guardar</button>
+        <button type="button" class="formulario__boton formulario__boton--cancelar" id="botonCancelar">Cancelar</button>
+    </form>
+    
+</div>
+    <div class="contenedor">
+        <div class="contenedor__calendario">
+            <div class="calendario__meses">
+                <button class="calendario__boton">🡸</button>
+                <span class="calendario__fecha-actual" id="fechaActual">fecha actual</span>
+                <button class="calendario__boton">🡺</button>
+            </div>
+            <div class="calendario__nombres-dias">
+                <div class="calendario__nombre-dia"><span>Domingo</span></div>
+                <div class="calendario__nombre-dia"><span>Lunes</span></div>
+                <div class="calendario__nombre-dia"><span>Martes</span></div>
+                <div class="calendario__nombre-dia"><span>Miércoles</span></div>
+                <div class="calendario__nombre-dia"><span>Jueves</span></div>
+                <div class="calendario__nombre-dia"><span>Viernes</span></div>
+                <div class="calendario__nombre-dia"><span>Sábado</span></div>
+            </div>
+                <div class="calendario__dias-semana">
+                <div class="calendario__dia calendario__dia--inicio">30</div>
+                <div class="calendario__dia calendario__dia--inicio">31</div>
+                <div class="calendario__dia">1</div>
+                <div class="calendario__dia">2</div>
+                <div class="calendario__dia">3</div>
+                <div class="calendario__dia">4</div>
+                <div class="calendario__dia">5</div>
+                <div class="calendario__dia">6</div>
+                <div class="calendario__dia">7</div>
+                <div class="calendario__dia">8</div>
+                <div class="calendario__dia">9</div>
+                <div class="calendario__dia">10</div>
+                <div class="calendario__dia">11</div>
+                <div class="calendario__dia">12</div>
+                <div class="calendario__dia">13</div>
+                <div class="calendario__dia">14</div>
+                <div class="calendario__dia">15</div>
+                <div class="calendario__dia">16</div>
+                <div class="calendario__dia">17</div>
+                <div class="calendario__dia">18</div>
+                <div class="calendario__dia">19</div>
+                <div class="calendario__dia">20</div>
+                <div class="calendario__dia">21</div>
+                <div class="calendario__dia">22</div>
+                <div class="calendario__dia">23</div>
+                <div class="calendario__dia">24</div>
+                <div class="calendario__dia">25</div>
+                <div class="calendario__dia">26</div>
+                <div class="calendario__dia">27</div>
+                <div class="calendario__dia">28</div>
+                <div class="calendario__dia">29</div>
+                <div class="calendario__dia">30</div>
+                <div class="calendario__dia calendario__dia--fin">1</div>
+                <div class="calendario__dia calendario__dia--fin">2</div>
+                <div class="calendario__dia calendario__dia--fin">3</div>
+            </div>
+        </div>
+        <div class="contenedor__evento">
+            <div class="contenedor__fecha">
+                <span class="contenedor__dia">Martes</span>
+                <span class="contenedor__fecha_hoy">29/05/2025</span>
+            </div>
+            
+                
+            <div class=" contenedor__info-evento">
+                <div id="motivoEvento" class="motivo-evento">Motivo del evento</div>
+                <div id="horaEvento" class="hora-evento" >13:15</div>
+            </div>
+
+            
+        </div>
+    </div>
+    <script src="calendario.js"></script>
+</body>
+</html>
