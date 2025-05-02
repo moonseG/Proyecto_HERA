@@ -132,6 +132,46 @@
       </div>
     </div>
     </section>
+    <footer class="footer">
+    <div class="footer__contenedor">
+    <div class="footer__nosotros footer--nosotros">
+      <h3>Sobre nosotros</h3>
+      <p>UNIVERSIDAD AUTONOMA DE CHIAPAS</p>
+      <p>Proyecto Hera es una iniciativa dedicada por estudiantes de la universidad UNACH que busca brindar apoyo y recursos a mujeres en diversas áreas, incluyendo salud mental, educación</p>	
+
+    </div>
+    <div class="footer__enlaces footer--enlaces">
+      <h3>Contenido</h3>
+      <ul>
+        <li><a href="menu_alumnas.php">Inicio</a></li>
+        <li><a href="#">Psicologas</a></li>
+        <li><a href="tutorias.php">Tutorias</a></li>
+        <li><a href="calendario.html">Citas</a></li>
+      </ul>
+
+    </div>
+    <div class="footer__soporte footer--soporte">
+      <h3>Soporte al cliente</h3>
+      <p><strong>Teléfono:</strong> 961-115-3174</p>
+      <p><strong>Email: no disponible@.com</strong>
+    </div>
+
+    <div class="footer__redes footer--redes">
+      <h3>Siguenos en nuestras redes sociales :)</h3>
+      <div class="footer__redes-contenedor">
+        <a href=""> <img src="https://www.pnguniverse.com/wp-content/uploads/2020/09/instagram-795531.png" alt=""></a>
+        <a href=""><img src="https://www.pnguniverse.com/wp-content/uploads/2020/09/facebook-boton-795531.png" alt=""></a>
+        <a href=""><img src="https://images.vexels.com/media/users/3/223136/isolated/preview/984f500cf9de4519b02b354346eb72e0-icono-de-facebook-redes-sociales.png" alt=""></a>
+      </div>
+
+    </div>  
+
+    </div>
+
+  <div class="footer__bottom">
+    <p>&copy; 2025. Todos los derechos reservados a UNACH</p>
+  </div>
+    </footer>
   
 </body>
 </html>
