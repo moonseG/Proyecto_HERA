@@ -246,6 +246,6 @@
         <script 
             src="https://kit.fontawesome.com/3b6aa92dd8.js" crossorigin="anonymous">
         </script>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis dolor rem? Quasi, repellendus asperiores! Cumque odio saepe, natus alias unde beatae repudiandae, laboriosam sed quaerat quas corrupti. Ipsa, magni!
+
     </body>
     </html>
