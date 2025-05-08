@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wgh@300;400;500;600;700&display=swap');
+
+
 /* Estilos generales */
 * {  
     box-sizing: border-box; 
@@ -12,6 +15,10 @@ body {
     padding: 0; 
     border-radius: 0; 
     background-color: #FFFFFF; 
+    font-family: poppins;
+    /* height: 100vh; */
+    display: grid;
+    place-items: center;
 } 
 
 /* Navbar */
@@ -218,21 +225,21 @@ footer h3:hover::after, footer li:hover::after {
     width: 100%;
 }
 
-    footer p, footer strong, footer a{
+footer p, footer strong, footer a{
         font-size: 0.8rem;
         margin-bottom: 10px;
         color: #595c5f;
         transition: color 0.3s ease, transform 0.3s ease;
-    }
-    footer a{
+}
+footer a{
         text-decoration: none;
         margin: 2px!important;
-    }
-    footer a:hover {
+}
+footer a:hover {
         color: white; 
         transform: scale(1.1);
-    }
-    footer li, footer ul{
+}
+footer li, footer ul{
         list-style-type: none;
         width: fit-content;
 
@@ -266,3 +273,161 @@ footer h3:hover::after, footer li:hover::after {
         font-size: 0.8rem;
         margin: 0 !important;
     }
+
+    /*Tutorias*/
+.Tutorias{
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+.contenido-seccion .contenedor-titulo{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contenido-seccion .contenedor-titulo h2{
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0;
+}
+/*Icon grid*/
+.icon-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px 0;
+}
+.icon-item{
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.icon-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-item i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .icon-item div {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 25px;
+    margin: 10% auto;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .modal-content h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .modal-content p {
+    color: #555;
+  }
+  
+  .close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #999;
+  }
+  
+  .close:hover {
+    color: #333;
+  }
+  :root{
+    background: #151515;
+  }
+
+  /*Tutorias*/
+.gallery{
+    display: flex;
+    background-color: var(--background-color);
+    gap: 16px;
+    scale: 1.6;
+    width: 100vw;
+    height: auto;
+}
+.tarjeta{
+    width: 140px;
+    height: 160px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    transition: 1000s all;
+    transform-origin: center left;
+    box-shadow: 0 5px 12px rgb(0, 0,0,0.54);
+    overflow: hidden;
+}
+.tarjeta img{
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.tarjeta:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+.tarjeta:hover figcaption{
+    font-size: 0.6rem;
+    position: absolute;
+    height: 80px;
+    width: 160px;
+    display: flex;
+    align-items: end;
+    background: linear-gradient(
+        to top, 
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.9) 100%,
+    );
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    padding-left: 12px;
+    padding-bottom: 10px;
+}
+.tarjeta:hover~.tarjeta{
+    font-weight: bold;
+    cursor: pointer;
+    transform: translate(22px);
+}
+.tarjeta h3{
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+.tutorias{
+    width: 100vw;
+    height: auto;
+    outline: 2px solid black;
+}

@@ -545,4 +545,62 @@ background-image: linear-gradient(#00000080, #00000080), url('img/tutora2.jpeg')
 
     }
 
-    
+/* tutorias */
+.gallery{
+    display: flex;
+    background-color: var(--background-color);
+    gap: 16px;
+    scale: 1.6
+}
+.tarjeta{
+    position: relative;
+    margin-top: 100px;
+    left: 0;
+    width: 140px;
+    height: 160px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    transition: 1000s all;
+    transform-origin: center left;
+    box-shadow: 0 5px 12px rgb(0, 0,0,0.54);
+    overflow: hidden;
+}
+.tarjeta img{
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.tarjeta:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+.tarjeta:hover figcaption{
+    font-size: 0.6rem;
+    position: absolute;
+    height: 80px;
+    width: 160px;
+    display: flex;
+    align-items: end;
+    background: linear-gradient(
+        to top, 
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.9) 100%,
+    );
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    padding-left: 12px;
+    padding-bottom: 10px;
+}
+.tarjeta:hover~.tarjeta{
+    font-weight: bold;
+    cursor: pointer;
+    transform: translate(22px);
+}
+.tarjeta h3{
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}

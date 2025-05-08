@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tutorias</title>
-        <link rel="stylesheet" href="tutorias.css">
+        <link rel="stylesheet" href="tutoriass.css">
+        <!-- <link rel="stylesheet" href="styles.css"> -->
         
     </head>
     <body>
@@ -73,62 +74,42 @@
                 </div>
             </section>
 
-            <section class="container top-products">
-                <div class="container-options">
+            <section class="tutorias">
+                <!-- <div class="container-options">
                     <span class="active">Anteriores</span>
                     <span>Proximos</span>
+                </div> -->
+                <h2>Tutorías</h2>
+                <section class=class="py-5 bg-light text-center">
+                <div class="gallery">
+                    <article class="tarjeta">
+                    <figure>
+                        <img src="img/defensa.jpeg" alt="Defensa personal">
+                        <figcaption>
+                        <h3>Defensa personal</h3>
+                        </figcaption>
+                    </figure>
+                    </article>
+                    <article class="tarjeta">
+                    <figure>
+                        <img src="img/planetario.jpeg" alt="Planetario">
+                        <figcaption>
+                        <h3>Planetario</h3>
+                        </figcaption>
+                    </figure>
+                    </article>
+                    <article class="tarjeta">
+                    <figure>
+                        <img src="img/psicologia.jpeg" alt="Sesion psicologica">
+                        <figcaption>
+                        <h3>sesion psicologica</h3>
+                        </figcaption>
+                    </figure>
+                    </article>
                 </div>
-
-                <div class="contenedor-card">
-                    <a href="evento.php" class="card-evento">
-                        <div class="card-title1">Tutoria I</div>
-                        <div class="card-tittle">Clase de defensa personal</div><br>
-                        <div class="card-subtitle">30 de abril de 2025</div><br>
-                        <!-- <div class="card-subtitle">11 a.m. Auditorio de los constituyentes</div> -->
-                    </a>
-
-                    <a href="evento.php" class="card-evento">
-                        <div class="card-title1">Tutoria II</div>
-                        <div class="card-tittle">La importacia de las emociones</div><br>
-                        <div class="card-subtitle">15 de mayo de 2025</div><br>
-                        <!-- <div class="card-subtitle">9 a.m. Centro de Convenciones Manuel Velasco Suárez</div> -->
-                    </a>
-
-                    <a href="evento.php" class="card-evento">
-                        <div class="card-title1">Tutoria III</div>
-                        <div class="card-tittle">Ciberseguridad</div><br>
-                        <div class="card-subtitle">20 de junio de 2025</div><br>
-                        <!-- <div class="card-subtitle">12 a.m. Auditorio de la facultad</div> -->
-                    </a>
-                </div>
-
-                <section class="tutorias1">
-                <a href="evento.php" class="tutorias-evento1" title="Ir a Tutoria I">
-                    <img src="https://www.pngkey.com/png/detail/436-4361094_imagenes-random-png.png" alt="Avatar" class="tutorias-img">
-                    <h3 class="card-title1">Tutoria I</h3>
-                    <p class="">Clase de defensa personal</p><br>
-                    <p class="card-subtitle">30 de abril de 2025</p><br>
-                </a>
-                
-                <a href="evento.php" class="tutorias-evento1" title="Ir a Tutoria II">
-                    <img src="https://www.pngkey.com/png/detail/436-4361094_imagenes-random-png.png" alt="Avatar" class="tutorias-img">
-                    <h3 class="card-title1">Tutoria II</h3>
-                    <p class="">La importacia de las emociones</p><br>
-                    <p class="card-subtitle">15 de mayo de 2025</p><br>
-                </a>
-
-                <a href="evento.php" class="tutorias-evento1" title="Ir a Tutoria III">
-                    <img src="https://www.pngkey.com/png/detail/436-4361094_imagenes-random-png.png" alt="Avatar" class="tutorias-img">
-                    <h3 class="card-title1">Tutoria III</h3>
-                    <p class="">Ciberseguridad</p><br>
-                    <p class="card-subtitle">20 de junio de 2025</p><br>
-                </a>
                 </section>
 
-
-
                 <h1 class="heading-1">Tutoras STEM</h1>
-
 
                 <div class="container-products">
                     <!--Tutora 1-->

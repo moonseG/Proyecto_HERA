@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="styles.css"> 
      <!-- CSS de Bootstrap 5 -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
      <!-- JS de Bootstrap 5  -->
@@ -19,6 +19,13 @@
         <div class="logo">
             <img src="./img/logo.jpg" alt="Logo"> <!-- Si HTML está dentro de 'vista' -->
         </div>
+        <!-- <nav id="nav" class="nav-links">
+                <li><a href="menu_alumnas.php">Inicio</a></li>
+                <a href="#Tutorias" onclick="Tutorias()">Tutorias</a>
+                <a href="#comodidades" onclick="seleccionar()">Comodidades</a>
+                <a href="#membresías" onclick="seleccionar()">Membresías</a>
+                <a href="#equipo" onclick="seleccionar()">Equipo</a>
+            </nav> -->
         <nav> 
             <ul class="nav-links">
                 <li><a href="menu_alumnas.php">Inicio</a></li>
@@ -90,6 +97,41 @@
     
       </div>
     </div>
+
+    <!--Seccion de Tutorias-->
+    <h2>Tutorías</h2>
+    <section class="tutorias">
+      <div class="gallery">
+        <article class="tarjeta">
+          <figure>
+            <img src="img/defensa.jpeg" alt="Defensa personal">
+            <figcaption>
+              <h3>Defensa personal</h3>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="tarjeta">
+          <figure>
+            <img src="img/planetario.jpeg" alt="Planetario">
+            <figcaption>
+              <h3>Planetario</h3>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="tarjeta">
+          <figure>
+            <img src="img/psicologia.jpeg" alt="Sesion psicologica">
+            <figcaption>
+              <h3>sesion psicologica</h3>
+            </figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!--Tutoras-->
+
+
 
     <!--Psicologas -->
     <section class="py-5 bg-light text-center">
@@ -172,6 +214,7 @@
     <p>&copy; 2025. Todos los derechos reservados a UNACH</p>
   </div>
     </footer>
+
   
 </body>
 </html>
