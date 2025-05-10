@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="estilos.css"> 
      <!-- CSS de Bootstrap 5 -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
      <!-- JS de Bootstrap 5  -->
@@ -19,13 +19,6 @@
         <div class="logo">
             <img src="./img/logo.jpg" alt="Logo"> <!-- Si HTML está dentro de 'vista' -->
         </div>
-        <!-- <nav id="nav" class="nav-links">
-                <li><a href="menu_alumnas.php">Inicio</a></li>
-                <a href="#Tutorias" onclick="Tutorias()">Tutorias</a>
-                <a href="#comodidades" onclick="seleccionar()">Comodidades</a>
-                <a href="#membresías" onclick="seleccionar()">Membresías</a>
-                <a href="#equipo" onclick="seleccionar()">Equipo</a>
-            </nav> -->
         <nav> 
             <ul class="nav-links">
                 <li><a href="menu_alumnas.php">Inicio</a></li>
@@ -98,39 +91,98 @@
       </div>
     </div>
 
-    <!--Seccion de Tutorias-->
-    <h2>Tutorías</h2>
-    <section class="tutorias">
-      <div class="gallery">
-        <article class="tarjeta">
-          <figure>
-            <img src="img/defensa.jpeg" alt="Defensa personal">
-            <figcaption>
-              <h3>Defensa personal</h3>
-            </figcaption>
-          </figure>
-        </article>
-        <article class="tarjeta">
-          <figure>
-            <img src="img/planetario.jpeg" alt="Planetario">
-            <figcaption>
-              <h3>Planetario</h3>
-            </figcaption>
-          </figure>
-        </article>
-        <article class="tarjeta">
-          <figure>
-            <img src="img/psicologia.jpeg" alt="Sesion psicologica">
-            <figcaption>
-              <h3>sesion psicologica</h3>
-            </figcaption>
-          </figure>
-        </article>
+    <!--Seccion de Tutoras STEM-->
+  <!-- <h2 class="text-warning tutorias__seccion">Tutoras STEM</h2>
+  <section class="tarjetas-eventos">
+  <div>
+    <label class="tarjeta-evento__label">
+        <input type="checkbox" class="tarjeta-evento__checkbox">
+      <div class="tarjeta-evento__contenedor">
+        <div class="tarjeta-evento__frente">
+          <img 
+            src="https://www.warriorsbarcelona.com/wp-content/uploads/2021/09/como-aprendo-defensa-personal-1000x600-1.jpg" 
+            alt="Imagen del evento" 
+            class="tarjeta-evento__imagen">
+            <div class="trajeta-evento__conten-nombre">
+              <div 
+                  class="tarjeta-evento__nombre">Defensa personal
+                </div>
+            </div>
+        </div>
+        <div class="tarjeta-evento__reversaso">
+          <div class="tarjeta-evento__contenido">
+            <p class="tarjeta-evento__fecha"><strong>Fecha:</strong> 12 de mayo de 2025</p>
+            <h2 class="tarjeta-evento__titulo">Defensa personalo</h2>
+            <p class="tarjeta-evento__descripcion">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+            </p>
+          </div>
+          <button class="tarjeta-evento__boton">Ver más</button>
+        </div>
       </div>
-    </section>
+    </label>
+  </div>
 
-    <!--Tutoras-->
+   COPIA DE LO MISMO DE ARRIBA, en caso de querer mas de estas  
+  <div class="tarjeta-evento__caja">
+    <label class="tarjeta-evento__label">
+      <input type="checkbox" class="tarjeta-evento__checkbox">
+      <div class="tarjeta-evento__contenedor">
+        <div class="tarjeta-evento__frente">
+          <img 
+            src="https://media.timeout.com/images/105999684/750/562/image.jpg" 
+            alt="Imagen del evento" 
+            class="tarjeta-evento__imagen">
+            
+            <div class="trajeta-evento__conten-nombre">
+                        <div 
+                        class="tarjeta-evento__nombre">Planetario
+                      </div>
+                    </div>
+        </div>
+        <div class="tarjeta-evento__reversaso">
+          <div class="tarjeta-evento__contenido">
+            <p class="tarjeta-evento__fecha"><strong>Fecha:</strong> 12 de mayo de 2025</p>
+            <h2 class="tarjeta-evento__titulo">Planetario</h2>
+            <p class="tarjeta-evento__descripcion">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+            </p>
+          </div>
+          <button class="tarjeta-evento__boton">Ver más</button>
+        </div>
+      </div>
+    </label>
+  </div>
 
+  <div class="tarjeta-evento__caja">
+    <label class="tarjeta-evento__label">
+      <input type="checkbox" class="tarjeta-evento__checkbox">
+      <div class="tarjeta-evento__contenedor">
+        <div class="tarjeta-evento__frente">
+          <img 
+            src="https://www.shutterstock.com/image-photo/happy-teenage-girl-on-consultation-600nw-2048866667.jpg" 
+            alt="Imagen del evento" 
+            class="tarjeta-evento__imagen">
+            <div class="trajeta-evento__conten-nombre">
+                        <div 
+                        class="tarjeta-evento__nombre">Sesion psicologica
+                      </div>
+                    </div>
+        </div>
+        <div class="tarjeta-evento__reversaso">
+          <div class="tarjeta-evento__contenido">
+            <p class="tarjeta-evento__fecha"><strong>Fecha:</strong> 12 de mayo de 2025</p>
+            <h2 class="tarjeta-evento__titulo">Psicologia grupal</h2>
+            <p class="tarjeta-evento__descripcion">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+            </p>
+          </div>
+          <button class="tarjeta-evento__boton">Ver más</button>
+        </div>
+      </div>
+    </label>
+  </div>
+  </section> -->
 
 
     <!--Psicologas -->

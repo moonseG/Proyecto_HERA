@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wgh@300;400;500;600;700&display=swap');
 
 :root{
-    --primary-color: #c7a17a;
+    --primary-color: #a6efa8;
     --background-color: #f9f5f0;
     --dark-color: #151515;
 }
@@ -14,16 +14,13 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Nunito", sans-serif; 
+    font-size: 20px;
 }
 /*UTILIDADES*/
 .container{
     max-width: 120rem;
     margin: 0 auto;
-}
-.heading-1{
-    text-align: center;
-    font-weight: 500;
-    font-size: 3rem;
 }
 /*HEADER*/
 .container.hero{
@@ -495,89 +492,95 @@ background-image: linear-gradient(#00000080, #00000080), url('img/tutora2.jpeg')
     }
     
 /*--------------seccion de tutorias------------------*/
-        .tutorias1{
-        display:flex;
-        justify-content:center;
-        gap:2rem;
-        flex-wrap: wrap;
-        user-select: none;
-        }
+/* .tutorias1{
+    display:flex;
+    justify-content:center;
+    gap:2rem;
+    flex-wrap: wrap;
+    user-select: none;
+}
         
 
-    .tutorias-img {
-        width: 100%;
-        height: auto;
+.tutorias-img {
+    width: 100%;
+    height: auto;
+}
+.card-title1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+.card-subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 10px 10px;
+}
+
+.tutorias-evento1 {
+    width: 280px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    background: linear-gradient(135deg, #f7b98de8, #ffe4cae2);
+    transition: all 0.3s ease;
+    border: none;
+    text-decoration: none;
     }
-    .card-title1 {
-        font-size: 1.25rem;
-        font-weight: bold;
-        margin: 10px 0;
-        color: #333;
-    }
-    .card-subtitle {
-        font-size: 1rem;
-        color: #555;
-        margin: 0 10px 10px;
-    }
+.tutorias1 a:visited{
+    color:inherit; hereda el color del padre
 
 
+}
+.tutorias-evento1:hover{
+    transform: scale(1.05); se agranda un 5% al poner el cursor encima
+    box-shadow: 0 0 15px gray;
 
-    .tutorias-evento1 {
-        width: 280px;
-        padding: 16px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        text-align: center;
-        background: linear-gradient(135deg, #f7b98de8, #ffe4cae2);
-        transition: all 0.3s ease;
-        border: none;
-        text-decoration: none;
-    }
-    .tutorias1 a:visited{
-        color:inherit; /*hereda el color del padre*/
+} */
 
 
-    }
-    .tutorias-evento1:hover{
-        transform: scale(1.05); /*se agranda un 5% al poner el cursor encima*/
-        box-shadow: 0 0 15px gray;
+/*TUTORIAS RUBENCHO*/
 
-    }
-
-/* tutorias */
 .gallery{
     display: flex;
-    background-color: var(--background-color);
-    gap: 16px;
-    scale: 1.6
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem; 
+    max-width: 100vw;
 }
 .tarjeta{
-    position: relative;
-    margin-top: 100px;
-    left: 0;
-    width: 140px;
-    height: 160px;
+    width: 240px;
+    height: 280px;
     background-color: var(--background-color);
     border-radius: 8px;
-    transition: 1000s all;
+    transition: transform 0.3s ease, margin 0.3s ease;
     transform-origin: center left;
     box-shadow: 0 5px 12px rgb(0, 0,0,0.54);
     overflow: hidden;
+    position: relative;
 }
+figure{
+    height: 100% ;  
+    margin: 0 !important;
+}
+
 .tarjeta img{
-    height: 160px;
+    width: 240px;
+    height: 280px;
     object-fit: cover;
     border-radius: 4px;
 }
 
-.tarjeta:hover{
-    cursor: pointer;
-    transform: scale(1.15);
+.tarjeta:hover {
+    transform: scale(1.1);
+    z-index: 10; /* Asegura que la tarjeta en hover esté por encima de las demás */
+    margin-right: 1rem;
 }
 .tarjeta:hover figcaption{
     font-size: 0.6rem;
-    position: absolute;
+    position: fixed;
     height: 80px;
     width: 160px;
     display: flex;
@@ -593,14 +596,188 @@ background-image: linear-gradient(#00000080, #00000080), url('img/tutora2.jpeg')
     padding-left: 12px;
     padding-bottom: 10px;
 }
-.tarjeta:hover~.tarjeta{
-    font-weight: bold;
-    cursor: pointer;
-    transform: translate(22px);
-}
+
 .tarjeta h3{
     font-size: 1rem;
     color: #fff;
     text-align: center;
     margin-top: 10px;
+}
+    
+.text-center{
+    margin-top: 5rem !important;
+}
+
+
+.tarjetas-eventos{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 1.7rem; 
+}
+
+  
+.tarjeta-evento__label {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    display: block;
+}
+  
+.tarjeta-evento__checkbox {
+    display: none;
+}
+
+.tarjeta-evento__contenedor {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+.tarjeta-evento__checkbox:checked + .tarjeta-evento__contenedor {
+    transform: rotateY(180deg);
+}
+  
+.tarjeta-evento__frente,
+.tarjeta-evento__reversaso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  
+.tarjeta-evento__frente {
+    background-color: #fff;
+    z-index: 2;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.trajeta-evento__conten-nombre {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #5e6365d0;
+}
+.trajeta-evento__conten-nombre:hover {
+    opacity: 1;
+    z-index: 1000;
+}
+.tarjeta-evento__nombre {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.822); /* Fondo negro semitransparente */
+    color: #f1f1f1;
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 1;
+    font-size: 20px;
+    padding: 1rem 0;
+    font-weight: bold;
+    user-select: none;
+}
+  
+.tarjeta-evento__frente:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+  
+.tarjeta-evento__imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.tarjeta-evento__reversaso     {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.tarjeta-evento__titulo {
+    margin: 0;
+    color: #333;
+}
+  
+.tarjeta-evento__boton {
+    padding: 10px 15px;
+    background-color: #ffc107;
+    color: gray;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+  
+.tarjeta-evento__boton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.titulo-tutorias h2{
+    margin-top: 30px;
+    font-family: "Nunito", sans-serif; 
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #25c12bb7; /* o cualquier color personalizado */
+}   
+/*Tutorias*/
+.icono{
+    width: 120px;
+    height: 120px;
+    margin: 55px 55px;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.iconos{
+    text-align: center;
+}
+.icono:hover {
+    transform: scale(1.2);
+}
+.modal{
+    display: none;/*Oculto por defecto*/
+    position: fixed; /*fijo a la pantalla*/
+    z-index: 1;/*se muestra encima de todo*/
+    left: 0; top: 0; /*posicion: esquina superior izquierda*/
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal-contenido{
+    background-color: #fff;
+    margin: 15% auto; /*15% desde la parte superior y centrado*/
+    padding: 20px; /* Espacio interior entre el borde del cuadro y su contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 300px; /* Ancho del cuadro */
+    text-align: center;
+}
+.cerrar{
+    float: right; /* Coloca el botón de cerrar a la derecha */
+    font-size: 20px; /* Tamaño de la fuente del botón de cerrar */
+    cursor: pointer ; 
+
+}
+.cerrar:hover{
+    color: red; /* Cambia el color al pasar el mouse */
 }
