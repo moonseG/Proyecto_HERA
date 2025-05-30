@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+}
+
+.titulo{
+    text-align: center;
+    color: purple;
+}
+
+.calendario{
+    background: white;    
+    width: 80%;
+    max-width: 80%;
+    margin: 1rem auto;
+    padding: .5rem;
+}
+.calendario_info{
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 1.4rem;
+    color: blueviolet;
+    text-transform: uppercase;
+}
+.calendario_avanzar{
+    cursor: pointer;
+    color: brown;
+    font-size: 2rem;
+    margin-left: auto;
+}
+.calendario_regresar{
+    cursor: pointer;
+    color: brown;
+    font-size: 2rem;
+    margin-right: auto; /*para centrar la parte de la fecha*/
+}
+.calendario_semana{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /*7 columnas (dias de la semana) con una fraccion cada una*/
+    padding-top: 1.5rem;
+}
+.calendario_mes{
+    margin-right: .3rem;
+}
+.calendario_anio{
+    margin-left: .3rem;
+}
