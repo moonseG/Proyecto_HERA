@@ -4,7 +4,7 @@
 
 /* Estilos generales */
 * {  
-    box-sizing: border-box; 
+    box-sizing: border-box;  
     margin: 0; 
     padding: 0; 
     font-family: "Nunito", sans-serif; 
@@ -18,7 +18,7 @@ body {
     margin: 0;
     padding: 0; 
     border-radius: 0; 
-    background-color: #ffffff; 
+    background-color: #F9F5F0;  
     font-family: poppins;
     display: grid;
     place-items: center;
@@ -26,7 +26,7 @@ body {
 
 /* Navbar */
 .header {
-    background-color: #FFFFFF;  
+    background-color: #F9F5F0;   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,7 +67,8 @@ body {
     transform: scale(1.2);
 }
 
-.icon-buttons {
+/*---------------- MENU DEL NAVBAR--------------*/
+.icon-buttons { 
   display: flex;
   align-items: center;
   gap: 12px;      
@@ -97,7 +98,7 @@ body {
 .citas { color: #D9AFE2; }     
 
 .btn .font-btn {
-  border: 2px solid #EC7BBE;   
+  border: 2px solid #EC7BBE;    
   background: white; 
   color: #CDA7DD;   
   padding: 5px 10px;
@@ -272,7 +273,7 @@ footer h3::after, footer li::after {
     bottom: -2px; /* Espacio debajo del texto */
     width: 0;
     height: 3px; /* Grosor de la línea */
-    background-color: #EC7BBE; 
+    background-color: #F9F5F0;  
     transition: width 1s ease; /* Animación de expansión */
 }
 
@@ -322,7 +323,7 @@ footer ul{
 }
 
 .footer__bottom{
-    background-color: #EC7BBE;  
+    background-color: #F9F5F0;   
     /*centrar*/
     text-align: center;
     padding: 0.8rem 0;

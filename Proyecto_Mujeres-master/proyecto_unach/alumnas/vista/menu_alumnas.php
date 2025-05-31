@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>  
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Proyecto Hera</title>
+    <title>Proyecto Hera</title> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css"> 
+    
+    <link rel="stylesheet" href="../vista/STATIC/estilos.css">  
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
      <!-- CSS de Bootstrap 5 -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -55,7 +57,7 @@
     
         <!-- Slides -->
         <div class="carousel-inner">
-    
+     
           <div class="carousel-item active">
             <img src="../vista/img/Mujeres.jpg" class="d-block w-100" alt="Ilustración">   
             <div class="carousel-caption d-none d-md-block">
@@ -267,7 +269,7 @@
       <p>UNIVERSIDAD AUTONOMA DE CHIAPAS</p> 
       <p class="txt-just">Proyecto Hera es una iniciativa dedicada por estudiantes de la universidad UNACH que busca brindar apoyo y recursos a mujeres en diversas áreas, incluyendo salud mental y educación</p>	
 
-
+ 
     </div>
     <div class="footer__enlaces footer--enlaces">
 
