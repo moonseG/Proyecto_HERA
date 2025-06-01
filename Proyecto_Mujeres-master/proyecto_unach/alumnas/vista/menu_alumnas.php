@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="../vista/STATIC/estilos.css">  
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
      <!-- CSS de Bootstrap 5 -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
      <!-- JS de Bootstrap 5  -->
@@ -25,17 +25,19 @@
             <h1 class="title">Proyecto Hera</h1> 
         </div>
         <div class="icon-buttons">
-        <a href="#inicio" title="Inicio">  
-          <div class="circle-icon ini"><i class="fas fa-house"></i></div>  
+        <a href="#inicio" title="Inicio">   
+          <div class="circle-icon ini"><i class="fa-solid fa-house-user"></i><span class="titulo-icono">Inicio</span></div>    
         </a>
-        <a href="tutorias.php" title="Tutorías">
-          <div class="circle-icon tuto"><i class="fas fa-chalkboard-teacher"></i></div>
+        <a href="#" title="Blogs">      
+          <div class="circle-icon temas"><i class="fas fa-book"></i>
+          <ul class="submenu"> 
+            <li><a href="#">Temas</a></li> 
+            <li><a href="#">Información</a></li> 
+          </ul>
+          <span class="titulo-icono">Blogs</span></div>
         </a>
-        <a href="#psicologas" title="Psicólogas"> 
-          <div class="circle-icon psi"><i class="fas fa-user-nurse"></i></div>
-        </a>
-        <a href="calendario.html" title="Citas">
-          <div class="circle-icon citas"><i class="fas fa-calendar-check"></i></div>  
+        <a href="#" title="Usuario">   
+          <div class="circle-icon user"><i class="fa-solid fa-user"></i><span class="titulo-icono">Usuario</span></div>
         </a>
 
         <div class="btn">

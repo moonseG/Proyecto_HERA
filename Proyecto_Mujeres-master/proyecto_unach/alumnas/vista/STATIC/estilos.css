@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wgh@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap'); 
 
-
-/* Estilos generales */
 * {  
     box-sizing: border-box;  
     margin: 0; 
@@ -67,45 +65,68 @@ body {
     transform: scale(1.2);
 }
 
-/*---------------- MENU DEL NAVBAR--------------*/
-.icon-buttons { 
-  display: flex;
-  align-items: center;
-  gap: 12px;      
+.icon-buttons {  
+  display: flex; /*alineación horizontal*/
+  align-items: center; /* Alinea verticalmente los elementos dentro del contenedor */
+  gap: 28px;  /*espacio entre iconos*/
+}
+.titulo-icono{
+    color: #000; 
 }
 .icon-buttons a {
   text-decoration: none;
-}
-.circle-icon {
-  width: 80px; /*ambos tamaños del circulo*/
-  height: 80px;   
-  border-radius: 50%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;  
-  cursor: pointer;
-  transition: background-color 0.3s;
-  border: 2px solid currentColor; /*se toma color del texto*/
-  color: #000;  /*color por defecto en color*/
-}
-.circle-icon i { 
-    font-size: 32px;  
-}
-.ini { color: #EC7BBE; }  
-.tuto { color: #baecb2f6; } 
-.psi { color: #AAB0C8; }  
-.citas { color: #D9AFE2; }     
+} 
+.circle-icon i {  
+    font-size: 34px; 
+    margin-right: 13px;
+    color: #272727; 
+}    
 
 .btn .font-btn {
-  border: 2px solid #EC7BBE;    
+  border: 2px solid #272727;     
   background: white; 
-  color: #CDA7DD;   
+  color: #272727;    
   padding: 5px 10px;
   font-weight: bold;
   border-radius: 4px; 
   cursor: pointer;
 }
+/*Submenu*/
+.submenu {
+    display: none; 
+    position: absolute;
+    background-color: transparent;
+    top: 100%; /* Se posicionará justo debajo del padre (.circle-icon.temas) */
+    left: 0;   
+    min-width: 150px; 
+    z-index: 1000; /* Para asegurar que esté por encima de otros elementos */
+    padding: 0; 
+    margin: 0;  
+    list-style: none; /* Quita los puntos de la lista */
+    border-radius: 4px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.6); /*sombra del cuadro*/
+}
+/* Mostrar el submenú cuando se hace hover sobre .circle-icon.temas */
+.circle-icon.temas:hover .submenu { 
+    display: block; /* Lo hacemos visible */
+}
+
+/* Estilos para los items del submenú */
+.submenu li a {
+    display: block;
+    width: 100%;
+    padding: 10px 15px; 
+    color: #000; 
+    font-weight: bold;
+    font-family: 'open sans', sans-serif;
+    text-decoration: none;
+    white-space: nowrap; /* Evita que el texto se parta en múltiples líneas */
+}
+
+.submenu li a:hover {
+    background-color: #555555; /* Color de fondo al pasar el mouse sobre un item */
+}
+
 .circle-icon:hover {
   filter: brightness(1.2); 
 }
@@ -120,7 +141,7 @@ header { /*El navbar sigue al usuario en el scroll */
     left:0;
     width: 100%;
     z-index: 1000;
-    display:none; /*? se ocultara, no? */
+    display:none; 
 }
 
 /* Carrusel */
@@ -331,7 +352,7 @@ footer ul{
     margin: 0 !important;
 }
 
-    /*Tutoras STEM*/
+/*-------------------Tutoras STEM-----------------*/
 
 .gallery{
     display: flex;
