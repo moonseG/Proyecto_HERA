@@ -124,7 +124,7 @@ body {
 }
 
 .submenu li a:hover {
-    background-color: #555555; /* Color de fondo al pasar el mouse sobre un item */
+    background-color: #F9F5F0; /* Color de fondo al pasar el mouse sobre un item */
 }
 
 .circle-icon:hover {
