@@ -1,6 +1,245 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wgh@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif&display=swap'); 
 
-body {
+* {
+    box-sizing: border-box;  
+    margin: 0; 
+    padding: 0; 
     font-family: poppins, sans-serif; 
-    background-color: F9F5F0; 
+    font-size: 15px;
+}
+body {
+    background-color: #F9F5F0;   
+}
+
+.encabezado {
+    background-color: #ffffff;  
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 105px; 
+    padding: 5px 10%; 
+}
+.encabezado .logo-psi{
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+}
+.logo-size { 
+  height: 100px; 
+}
+.titulo{ 
+    font-family: "Nunito", sans-serif;
+    font-size: 19px; 
+    text-align: justify;
+    margin-left: 20px; 
+}
+.titulo span{
+    font-family: "Nunito", sans-serif;
+    font-size: 19px;  
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 100px;
+    display: flex;
+}
+nav ul li {
+    margin-left: 70px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black; 
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* CONTENIDO */
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    gap: 40px; /* Space between text and image sections */
+}
+
+.hero-content {
+    flex: 1; /* Takes up available space */
+    max-width: 50%; /* Limit width */
+}
+
+.decorative-line-container {
+    display: flex;
+    height: 8px; /* Height of the line */
+    width: 150px; /* Total width of the line */
+    margin-bottom: 20px;
+}
+
+.decorative-line-container .line-segment {
+    height: 100%;
+}
+
+.decorative-line-container .blue {
+    background-color: #A8BBFF; /* Light blue from design */
+    width: 60%; /* Adjust ratio as needed */
+}
+
+.decorative-line-container .black {
+    background-color: #000;
+    width: 40%; /* Adjust ratio as needed */
+}
+
+.hero-content h1 {
+    font-size: 3.5em; /* Large heading */
+    font-weight: 900;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero-content .highlight-blue {
+    color: #A8BBFF; /* Light blue color from the design */
+}
+
+.hero-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 450px; /* Limit paragraph width for readability */
+}
+
+.hero-image-section {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center the image if it's smaller than container */
+    align-items: center;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Slight rounding if desired */
+    display: block; /* Removes extra space below image */
+}
+
+/* Dots Pattern */
+.dots-pattern {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 8px); /* Size of dots */
+    gap: 6px; /* Space between dots */
+    z-index: -1; /* Behind the text content, but above hero image section if needed */
+}
+
+.dots-pattern span {
+    width: 8px;
+    height: 8px;
+    background-color: #000; /* Color of dots */
+    border-radius: 50%;
+}
+
+.top-dots {
+    top: -10px;  /* Adjust as per design */
+    left: -20px; /* Adjust as per design */
+}
+
+.bottom-dots {
+    bottom: -10px; /* Adjust as per design */
+    right: -20px;  /* Adjust as per design */
+}
+
+
+/* Mood Tracker Section */
+.mood-tracker {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    background-color: #A8BBFF; /* Light blue background for the whole strip */
+    padding: 0; /* Remove padding if items fill it edge to edge */
+    margin-left: -30px; /* Extend to the edge of website-container */
+    margin-right: -30px; /* Extend to the edge of website-container */
+}
+
+.mood-item {
+    flex: 1; /* Each item takes equal space */
+    max-width: 150px; /* Or a fixed width if you prefer */
+    height: 120px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em; /* Emoji size */
+}
+
+.mood-item.dark {
+    background-color: #000; /* Black background for alternating items */
+    color: #A8BBFF; /* Light blue emoji on dark background */
+}
+
+/* Responsive adjustments (simple example) */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        max-width: 100%;
+    }
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .decorative-line-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-image-section {
+        margin-top: 30px;
+    }
+    .top-dots, .bottom-dots {
+        /* Adjust or hide dots on smaller screens if they cause layout issues */
+        display: none; 
+    }
+    .mood-tracker {
+        flex-wrap: wrap; /* Allow items to wrap */
+    }
+    .mood-item {
+        flex-basis: 50%; /* Two items per row */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        margin-top: 15px;
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .btn-primary {
+        margin-top: 15px;
+        align-self: flex-start;
+    }
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+    .mood-item {
+        flex-basis: 100%; /* One item per row on very small screens */
+        max-width: 100%;
+        height: 100px;
+        font-size: 2.5em;
+    }
 }
