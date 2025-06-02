@@ -4,23 +4,66 @@
 }
 body{
     background-color: #f9f5f0;
-    padding: auto;
+    margin: 0;
+    padding: 0;
 }
 
 html{
     font-family: 'Poppins', sans-serif;
-}
-
-.titulo{
+} 
+.pagina-titulo{
     text-align: center;
     color: #EF8118;
+}
+/*ENCABEZADO*/
+.encabezado {
+    background-color: #fecea1;  
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 105px; 
+    padding: 5px 10%; 
+}
+.encabezado .logo-psi{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.logo-size { 
+  height: 100px; 
+}
+.titulo{ 
+    font-family: "Nunito", sans-serif;
+    font-size: 19px; 
+    text-align: justify;
+    margin-left: 20px; 
+}
+.titulo span{
+    font-family: "Nunito", sans-serif;
+    font-size: 19px;  
+}
+nav ul {
+    list-style: none;
+    padding:0;
+    margin-left: 300px;
+    display: flex;
+}
+nav ul li {
+    margin-left: 70px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black; 
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .calendario{
     background: white;    
     width: 40%;
     max-width: 40%;
-    margin: 1rem auto;
+    margin: 3rem;
     padding: .5rem;
 }
 .calendario_item:hover{
@@ -86,28 +129,31 @@ html{
 /*NAVBAR*/
 .container-nabvar{ 
     background-color: #fecea1;  
-    justify-content: space-between;
-    height: 5rem; /*ancho del navbar */ 
+    height: 105px; /*ancho del navbar */ 
+    display: flex;
     align-items: center;
-    padding: 5px 10%
+    justify-content: center;
 }
+
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1rem 0;
 }
 .navbar .fa-bars{
     display: none;
 }
-.menu img{
-    width: 5rem;
-    height: 5rem;
-    align-items: center;
+.navbar img{
+    width: 100px;
+    display: block;
+    margin-left: 25rem;
 }
 .menu{
+    width: 100vw;
     display: flex;
     gap: 2rem;
+    padding-right: 5rem;
 }
 .menu li{
     list-style: none;
@@ -143,6 +189,8 @@ html{
 .contenedor-mayor{
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 10rem;
 }
 .contenedor-mayor img{
     width: auto;
