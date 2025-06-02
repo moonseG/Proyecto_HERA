@@ -12,10 +12,10 @@
         <div class="container py-5 h-100">
             <div class="row d-flex align-items-center justify-content-center h-100">
                 <div class="col-md-8 col-lg-7 col-xl-6">
-                    <img src="./alumnas/vista/img/inicio.svg" class="img-fluid" alt="Phone image">
+                    <img src="../vista/img/inicio.svg" class="img-fluid" alt="Phone image">
                 </div>
                 <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-                    <form autocomplete="nope" name="fmt_inicio" class="p-3 mt-3" method="POST" action="./alumnas/modelo/conexion.php" enctype="application/x-www-form-urlencoded">
+                    <form autocomplete="nope" name="fmt_inicio" class="p-3 mt-3" method="POST" action="../modelo/conexion.php" enctype="application/x-www-form-urlencoded">
                         <!-- Usuario -->
                         <div class="form-floating mb-3">
                             <input type="email" class="form-control" id="floatingInput">
@@ -38,7 +38,7 @@
                         </div>
                     </form>
                     <div class="d-flex justify-content-around align-items-center mb-4">
-                            <a href="./alumnas/vista/registro_alumnas.php">¿No tienes una cuenta? Registrate</a>
+                            <a href="../vista/registro_alumnas.php">¿No tienes una cuenta? Registrate</a>
                     </div>
                 </div>
             </div>

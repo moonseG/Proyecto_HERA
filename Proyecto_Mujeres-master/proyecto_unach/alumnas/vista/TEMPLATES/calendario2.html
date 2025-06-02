@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendar citas</title>
-    <link rel="stylesheet" href="calendario2.css" />
+    <link rel="stylesheet" href="../STATIC/CSS/calendario2.css">
 </head>
 <body>
+        <div class="container-nabvar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="../index.php">Inicio</a></li>
+                    <li><a href="../TEMPLATES/calendario2.html">Tutorias STEAM</a></li> <!-- (li<a[href="#"])*6-->
+                    <li><a href="#">Proximos</a></li>
+                </ul> 
+            </nav>
+        </div>
     <h1 class="titulo">Citas psicologicas</h1>
     <div class="calendario">
         <div class="calendario_info">
             <div class="calendario_regresar" id="regresar_mes">⇦</div> <!--Caracteres unicode para las flechas-->
-            <div class="calendario_mes" id="mes">Enero</div>
-            <div class="calendario_anio" id="anio">2025</div>
+            <div class="calendario_mes" id="mes"></div>
+            <div class="calendario_anio" id="anio"></div>
             <div class="calendario_avanzar" id="avanzar_mes">⇨</div>
         </div>
 
@@ -28,6 +38,7 @@
 
         <div class="calendario_fechas" id="date"></div>
     </div>
+        <script src="../STATIC/JS/calendario2.js"></script>
 
 </body>
 </html>

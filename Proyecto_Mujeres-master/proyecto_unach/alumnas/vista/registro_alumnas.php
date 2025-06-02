@@ -13,7 +13,7 @@
         <div class="container py-5 h-100">
             <div class="row d-flex align-items-center justify-content-center h-100">
                 <div class="col-md-8 col-lg-7 col-xl-6">
-                    <img src="./img/figura2.jpg" class="img-fluid" alt="Phone image">
+                    <img src="../vista/img/figura2.jpg" alt="Phone image">
                 </div>
                 <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
                     <form autocomplete="nope" name="fmt_inicio" class="p-3 mt-3" method="POST" action="../controlador/registrar_alumnas.php" enctype="application/x-www-form-urlencoded">
