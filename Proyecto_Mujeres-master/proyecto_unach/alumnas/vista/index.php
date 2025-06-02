@@ -31,7 +31,6 @@
                         <div class="d-flex justify-content-around align-items-center mb-4">
                             <a href="#">¿Has olvidado tu contraseña?</a>
                         </div>
-
                         <div class="d-flex justify-content-around align-items-center mb-4">
                             <!-- Botón enviar -->
                             <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block">Iniciar Sesión</button>
