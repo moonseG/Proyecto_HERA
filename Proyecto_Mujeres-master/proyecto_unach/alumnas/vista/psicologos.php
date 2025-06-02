@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../vista/STATIC/CSS/psico.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../vista/STATIC/CSS/psico.css">  
     <title>Psicología</title> 
 </head>
 <body>
@@ -31,12 +32,11 @@
         <section class="hero">
             <div class="hero-content">
                 <div class="decorative-line-container">
-                    <div class="line-segment blue"></div>
+                    <div class="line-segment orange"></div>
                     <div class="line-segment black"></div>
                 </div>
-                <h1>Prioritize Your<br><span class="highlight-blue">Mental Health.</span></h1>
+                <h1>Sé tu prioridad<br><span class="highlight-orange">Aquí, tu bienestar importa.</span></h1>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-                <a href="#" class="btn btn-secondary">Learn More →</a>
             </div>
             <div class="hero-image-section">
                 <div class="dots-pattern top-dots">
@@ -44,19 +44,14 @@
                     <span></span><span></span><span></span>
                     <span></span><span></span><span></span>
                 </div>
-                <img src="../vista/img/Container-psico.jpg" alt="Desk with brain model, keyboard, glasses, and notebook" class="hero-image">
-                <div class="dots-pattern bottom-dots">
-                    <span></span><span></span><span></span>
-                    <span></span><span></span><span></span>
-                    <span></span><span></span><span></span>
-                </div>
+                <img src="../vista/img/Container-psico.jpg" class="hero-image">
             </div>
         </section>
-        <section class="mood-tracker">
-            <div class="mood-item">😊</div>
-            <div class="mood-item dark">😟</div>
-            <div class="mood-item">😊</div>
-            <div class="mood-item dark">😟</div>
+        <section class="section-moods"> 
+            <div class="mood-item"><i class="fa-regular fa-face-smile"></i></div>
+            <div class="mood-item dark"><i class="fa-regular fa-face-frown"></i></div>
+            <div class="mood-item"><i class="fa-regular fa-face-smile"></i></div>
+            <div class="mood-item dark"><i class="fa-regular fa-face-frown"></i></div>
         </section>
     </div>
 
