@@ -158,9 +158,6 @@ nav ul li a {
     display: flex; /* Para alinear los mood-item en una fila */
     background-color: #ffd19b;
     height: 110px; /* Altura para la franja*/
-    padding: 0 40px; 
-    margin-left: -30px;
-    margin-right: -30px;
     align-items: stretch; /* Asegura que los items llenen la altura */
 }
 
