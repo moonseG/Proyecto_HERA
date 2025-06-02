@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../vista/STATIC/CSS/tutos.css">
+    <link rel="stylesheet" href="../vista/STATIC/CSS/tutorias.css">
         
 </head>
     <body>
@@ -37,17 +37,15 @@
                 <div class="contenedor">
                     <div class="quienes-somos">
                         <p class="info1"> 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestias itaque soluta. Rerum reprehenderit, ex hic suscipit, inventore dicta iure, aliquam esse porro asperiores optio quae delectus quam eius explicabo. 
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestiae fuga officiis libero impedit optio enim eaque atque temporibus consectetur repudiandae explicabo reprehenderit iste nulla numquam deleniti, vel hic vero.
                         </p>
                     </div>
-                    <img src="https://mujeres360.org/wp-content/uploads/2023/01/Carreas-STEM.jpg" alt="Imagen STEM UNACH">
+                    <img src="https://worldbank.scene7.com/is/image/worldbankprod/Womens-girls-empowerment-main?wid=780&hei=439&qlt=85,0&resMode=sharp" alt="Imagen STEM UNACH">
                 </div>
                 <div class="contenedor2">
-                        <img src="https://mujeres360.org/wp-content/uploads/2023/01/Carreas-STEM.jpg" alt="Imagen STEM UNACH">
+                        <img src="https://www.infobae.com/new-resizer/VQfCUutXHFGUg30Lc8mOoP9JvYM=/arc-anglerfish-arc2-prod-infobae/public/HGCA3GX5A5C55KEVCDQ5QHM74M.jpg" alt="Imagen STEM UNACH">
                     <div class="quienes-somos">
                         <p class="info1"> 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestias itaque soluta. Rerum reprehenderit, ex hic suscipit, inventore dicta iure, aliquam esse porro asperiores optio quae delectus quam eius explicabo. 
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestiae fuga officiis libero impedit optio enim eaque atque temporibus consectetur repudiandae explicabo reprehenderit iste nulla numquam deleniti, vel hic vero.
                         </p>
                     </div>
