@@ -27,7 +27,7 @@
       <a href="#inicio" title="Inicio">   
         <div class="circle-icon ini"><i class="fa-solid fa-house-user"></i><span class="titulo-icono">Inicio</span></div>    
       </a>
-      <a href="../tutorias.php" title="tutorias">   
+      <a href="../vista/tutorias.php" title="tutorias">   
         <div class="circle-icon ini"><i class="fa-solid fa-people-group"></i></i><span class="titulo-icono">Tutorias</span></div>    
       </a>
       <a href="#" title="Blogs">      
@@ -38,7 +38,7 @@
         </ul>
         <span class="titulo-icono">Blogs</span></div>
       </a>
-      <a href="#" title="Usuario">   
+      <a href="psicologos.php" title="Usuario">   
         <div class="circle-icon user"><i class="fa-solid fa-user"></i><span class="titulo-icono">Usuario</span></div>
       </a>
       <div class="btn">

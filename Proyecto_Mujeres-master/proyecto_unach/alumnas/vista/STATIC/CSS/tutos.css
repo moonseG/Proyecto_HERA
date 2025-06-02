@@ -86,25 +86,24 @@ html{
     text-align: justify;
     line-height: 34px; 
 }
-.quienes-somos p{
-    margin-top: 0;
-    margin-top: 1rem;
-    /*padding-left: 8rem;
-    padding-right: 50rem;*/
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    margin: 3rem 10em 1rem 9rem;
 }
-.info1{
-    padding-left: 8rem;
-    padding-left: 80rem;
+.contenedor2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    margin: 5rem 8rem 1rem 10rem;
 }
-
-.info2{
-    padding-right: 8rem;
-    padding-left: 80rem;
-}
-.bloque-info img{
-    width: 40   rem;
-    height: auto;
-    border-radius: 10px;
+.contenedor img, .contenedor2 img{
+    width: 50rem;
+    height: 25rem;
+    border-radius: 10%;
 }
 
 /*--------------seccion de tutoras------------------*/

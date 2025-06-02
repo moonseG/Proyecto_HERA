@@ -22,6 +22,7 @@
                         <li><a href="../vista/menu_alumnas.php">Inicio</a></li>
                         <li><a href="#">Nosotros</a></li>
                         <li><a href="#">Contáctanos</a></li>
+                        <li><a href="../vista/TEMPLATES/calendario2.html">Agenda</a></li>
                     </ul>
                 </nav>
             </div>

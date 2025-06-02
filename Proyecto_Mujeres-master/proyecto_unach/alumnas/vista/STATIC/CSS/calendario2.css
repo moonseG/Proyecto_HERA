@@ -18,8 +18,8 @@ html{
 
 .calendario{
     background: white;    
-    width: 80%;
-    max-width: 80%;
+    width: 40%;
+    max-width: 40%;
     margin: 1rem auto;
     padding: .5rem;
 }
@@ -100,6 +100,11 @@ html{
 .navbar .fa-bars{
     display: none;
 }
+.menu img{
+    width: 5rem;
+    height: 5rem;
+    align-items: center;
+}
 .menu{
     display: flex;
     gap: 2rem;
@@ -134,5 +139,17 @@ html{
 .menu a:hover{
     color: #fff
 }
-
+/*contenedor del calendario*/
+.contenedor-mayor{
+    display: flex;
+    align-items: center;
+}
+.contenedor-mayor img{
+    width: auto;
+    height: 20rem;
+    max-width: auto;
+    border-radius: 10%;
+    margin-left: 8rem;
+    border: 2rem solid #fecea1;
+}
 

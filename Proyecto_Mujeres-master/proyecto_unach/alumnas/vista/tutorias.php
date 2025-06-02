@@ -1,58 +1,61 @@
-        <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tutorias</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../STATIC/CSS/tutorias.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorias</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../vista/STATIC/CSS/tutos.css">
         
-    </head>
+</head>
     <body>
         <header>
-            <div class="container-hero"> <!--una clase-->
-                <div class="container hero"> <!-- dos clases-->
-                    <div class="customer-support">
-                        <i class="fa-solid fa-headset"></i>
-                        <div class="content-customer-support">
-                            <span class="text">Soporte al cliente</span>
-                            <span class="number">961-115-3174</span>
-                        </div>
-                    </div>
-                    <div class="container-logo">
-                        <i class="fa-solid fa-face-smile-beam"></i>
-                        <h1 class="logo"><a href="tutorias.php">Tutorias</a></h1>
-                    </div>
-                    <div class="container-user">
-                        <i class="fa-solid fa-user" onclick="abrirModal('cerrarSesion')"></i>
-                    </div>
-
-                </div>
-            </div>
             <div class="container-nabvar">
                 <nav class="navbar container">
                     <i class="fa-solid fa-bars"></i>
                     <ul class="menu">
-                    <li><a href="menu_alumnas.php">Inicio</a></li> <!-- (li<a[href="#"])*6-->
-                    <li><a href="tutorias.php">Tutorias STEM</a></li>
+                        <div class="">
+                            <a href="menu_alumnas.php" title="Inicio">  
+                                <div class="circle-icon ini"><i class="fas fa-house"></i></div>  
+                             </a>    
+                        </div>
+                    <!--<li><a href="menu_alumnas.html">Inicio</a></li>-->
+                    <li><a href="tutorias.php">Tutorias STEAM</a></li> <!-- (li<a[href="#"])*6-->
                     <li><a href="#">Proximos</a></li>
                     </ul> 
-                    <form class="search-form">
-                        <input type="search" placeholder="Buscar...">
-                        <button class="btn-search">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </form>
                 </nav>
             </div>
         </header>
         <main class="main-content">
+            <section class="">
+                <div class="titulo-tutorias">
+                        <br><h2>Quiénes somos</h2>
+                </div>                        
+                <div class="contenedor">
+                    <div class="quienes-somos">
+                        <p class="info1"> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestias itaque soluta. Rerum reprehenderit, ex hic suscipit, inventore dicta iure, aliquam esse porro asperiores optio quae delectus quam eius explicabo. 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestiae fuga officiis libero impedit optio enim eaque atque temporibus consectetur repudiandae explicabo reprehenderit iste nulla numquam deleniti, vel hic vero.
+                        </p>
+                    </div>
+                    <img src="https://mujeres360.org/wp-content/uploads/2023/01/Carreas-STEM.jpg" alt="Imagen STEM UNACH">
+                </div>
+                <div class="contenedor2">
+                        <img src="https://mujeres360.org/wp-content/uploads/2023/01/Carreas-STEM.jpg" alt="Imagen STEM UNACH">
+                    <div class="quienes-somos">
+                        <p class="info1"> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestias itaque soluta. Rerum reprehenderit, ex hic suscipit, inventore dicta iure, aliquam esse porro asperiores optio quae delectus quam eius explicabo. 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestiae fuga officiis libero impedit optio enim eaque atque temporibus consectetur repudiandae explicabo reprehenderit iste nulla numquam deleniti, vel hic vero.
+                        </p>
+                    </div>
+                </div>
+            </section>
             <section class="tutorias-info">
                 <div class="titulo-tutorias">
-                    <h2>Tutorias STEM</h2>
+                    <br><h2>Tutorias STEAM</h2>
                 </div>
             <div class="iconos">
                 <img src="img/globo-terraqueo.png" class="icono" onclick="abrirModal('miModal')">

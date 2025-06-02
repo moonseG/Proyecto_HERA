@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <h1>holanda</h1>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendar citas</title>
     <link rel="stylesheet" href="../STATIC/CSS/calendario2.css">
 </head>
 <body>
-        <div class="container-nabvar">
-            <nav class="navbar container">
-                <i class="fa-solid fa-bars"></i>
-                <ul class="menu">
-                    <li><a href="../index.php">Inicio</a></li>
-                    <li><a href="../TEMPLATES/calendario2.html">Tutorias STEAM</a></li> <!-- (li<a[href="#"])*6-->
-                    <li><a href="#">Proximos</a></li>
-                    
-                </ul> 
-            </nav>
-        </div>
+    <div class="container-nabvar">
+        <nav class="navbar container">
+            <ul class="menu">
+                <i><a href="../psicologos.php">Regresar</a></i>
+                <img src="../img/empatia.png" class="img-navbar" alt="Empatia">
+                <li><a href="../TEMPLATES/calendario2.html">Tutorias STEAM</a></li> <!--(li<a[href="#"])*6-->
+                <li><a href="#">Proximos</a></li>                    
+            </ul> 
+            
+        </nav>
+    </div>
     <h1 class="titulo">Citas psicologicas</h1>
-    <div class="calendario">
+    <div class="contenedor-mayor">
+        <img src="https://scontent.ftgz3-1.fna.fbcdn.net/v/t39.30808-6/312605001_550060207128774_1314010302373653577_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGfMAb3KLdeqcYqe00Iec3qZXU_ydGXSRFldT_J0ZdJERCl9T0NZQWaZR8J-uhPzcYeNE_W5Yu3BhQ0KgRCmd1Y&_nc_ohc=l_4g9XAX2z0Q7kNvwFxp5DI&_nc_oc=Adm5lIDFaOV0qdE4DumjxEyp11tz9QEY-hbfrJ4WWE_2zJAvunhc2jbHELcCdlHatfhGbUjxPbRkvVaULsfppXqM&_nc_zt=23&_nc_ht=scontent.ftgz3-1.fna&_nc_gid=9j7s-vNw3aHj4xidXdmzHw&oh=00_AfKew9Y6kFmEoS_ktq7ROsDOyIH6Ht7gwoNU8Tjc2BAAdQ&oe=6843C8AA" alt="Calendario-img" class="calendario-img">
+        <div class="calendario">
         <div class="calendario_info">
             <div class="calendario_regresar" id="regresar_mes">⇦</div> <!--Caracteres unicode para las flechas-->
             <div class="calendario_mes" id="mes"></div>
             <div class="calendario_anio" id="anio"></div>
             <div class="calendario_avanzar" id="avanzar_mes">⇨</div>
         </div>
-
-        <div class="calendario_semana">
+            <div class="calendario_semana">
             <div class="calendario_dia calendario_item">Lun</div>
             <div class="calendario_dia calendario_item">Mar</div>
             <div class="calendario_dia calendario_item">Mie</div>
@@ -36,9 +36,9 @@
             <div class="calendario_dia calendario_item">Vie</div>
             <div class="calendario_dia calendario_item">Sab</div>
             <div class="calendario_dia calendario_item">Dom</div>
-        </div>
-
+            </div>
         <div class="calendario_fechas" id="date"></div>
+    </div>
     </div>
         <script src="../STATIC/JS/calendario2.js"></script>
 
