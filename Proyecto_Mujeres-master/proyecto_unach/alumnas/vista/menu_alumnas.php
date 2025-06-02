@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="../vista/STATIC/estilos.css">  
+    <link rel="stylesheet" href="../vista/STATIC/CSS/estilos.css">  
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
      <!-- CSS de Bootstrap 5 -->
@@ -17,34 +17,34 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body> 
- 
-    <header class="header"> 
-        <div class="logo"> 
-            <img src="../vista/img/LOGOUNACH-remo.png" alt="Logo" class="logo-section"> <!-- Si HTML está dentro de 'vista' --> 
-            <div class="divider"></div>
-            <h1 class="title">Proyecto Hera</h1> 
-        </div>
-        <div class="icon-buttons">
-        <a href="#inicio" title="Inicio">   
-          <div class="circle-icon ini"><i class="fa-solid fa-house-user"></i><span class="titulo-icono">Inicio</span></div>    
-        </a>
-        <a href="#" title="Blogs">      
-          <div class="circle-icon temas"><i class="fas fa-book"></i>
-          <ul class="submenu"> 
-            <li><a href="#">Temas</a></li> 
-            <li><a href="#">Información</a></li> 
-          </ul>
-          <span class="titulo-icono">Blogs</span></div>
-        </a>
-        <a href="#" title="Usuario">   
-          <div class="circle-icon user"><i class="fa-solid fa-user"></i><span class="titulo-icono">Usuario</span></div>
-        </a>
 
-        <div class="btn">
-          <button class="font-btn">Chat</button> 
-        </div> 
-        </div>  
-    </header>
+  <header class="header"> 
+    <div class="logo"> 
+      <img src="../vista/img/LOGOUNACH-remo.png" alt="Logo" class="logo-section"> <!-- Si HTML está dentro de 'vista' --> 
+      <div class="divider"></div>
+      <h1 class="title">Proyecto Hera</h1> 
+    </div>
+    <div class="icon-buttons">
+      <a href="#inicio" title="Inicio">   
+        <div class="circle-icon ini"><i class="fa-solid fa-house-user"></i><span class="titulo-icono">Inicio</span></div>    
+      </a>
+      <a href="#" title="Blogs">      
+        <div class="circle-icon temas"><i class="fas fa-book"></i>
+        <ul class="submenu"> 
+          <li><a href="#">Temas</a></li> 
+          <li><a href="#">Información</a></li> 
+        </ul>
+        <span class="titulo-icono">Blogs</span></div>
+      </a>
+      <a href="#" title="Usuario">   
+        <div class="circle-icon user"><i class="fa-solid fa-user"></i><span class="titulo-icono">Usuario</span></div>
+      </a>
+      
+      <div class="btn">
+        <button class="font-btn">Chat</button> 
+      </div> 
+    </div>  
+  </header>
 
     <div class="container-fluid p-0 m-0" id="inicio"> 
       <div id="theCarousel" class="carousel slide" data-bs-ride="carousel">
