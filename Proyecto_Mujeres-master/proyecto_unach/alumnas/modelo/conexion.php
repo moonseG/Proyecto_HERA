@@ -1,4 +1,4 @@
-<?php
+S<?php
 // Configuración de la conexión
 $host = 'localhost'; // Cambia esto si tu servidor de base de datos está en otro lugar
 $dbname = 'proyecto_hera'; // Nombre de la base de datos
