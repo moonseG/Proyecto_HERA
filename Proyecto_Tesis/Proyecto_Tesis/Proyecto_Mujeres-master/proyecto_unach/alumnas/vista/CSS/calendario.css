@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+    
+html, body {
+    height: 100%; /*para que ocupe todo el alto de la pantalla para centrar el contenedor sin otro div hijo*/
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: #f8f9fa;
+}
+.contenedor{
+    width: 85%;
+    height: 85vh;
+    margin:auto;
+    background: #516467;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #2e3030df;
+    display:flex;
+}
+
+.contenedor__calendario{
+    width: 65%;
+    height: 90%;
+    margin: 2% 0 2% 2%;
+    background-color:#ece9e9 ;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.calendario__meses{
+    display:flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 2% 0;
+
+}
+.calendario__boton{
+    border:none;    
+    background-color: transparent;
+    cursor:pointer;
+    color:#303131df;
+    font-size: 1.2rem;
+
+}
+.calendario__nombres-dias{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*Tipo de distribucion flexbox*/
+    padding: 0 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize; /*En caso el nombre del dia se cambie pasara como capital*/
+}
+.calendario__nombres-dias div {
+    width: 14.28%; /*7 dias de la semana, 100% / 7 = 14.28%, la idea es de que sean exactamente del mismo tamaño*/
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.calendario__dias-semana{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    
+}
+.calendario__dia{
+    width: 14.28%; /*"heredamos" el mismo tamaño que el nombre d elos dias*/    
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; /*para centrar el texto*/
+    cursor: pointer; /*formato de cursor*/
+    border: 1px solid #f5f5f5;    
+    text-decoration: underline;    
+    text-underline-offset: 0.5rem;
+    text-decoration-color: transparent; /*La idea es de que no haga un salto en el hover de nrgro a x color*/
+    transition: text-decoration-color 0.4s ease-in-out, background-color 0.4s ease-in-out; /*efecto de transiciones en color de fondo y el underline*/
+
+
+
+}
+.calendario__dia:hover{
+    background-color: #f6cd64;
+    box-shadow: 0 0 15px rgb(182, 177, 177);
+    text-decoration-color: #f3f0f0;
+    
+}
+
+
+.calendario__dia--inicio,.calendario__dia--fin{
+    background-color: #d9ddddeb;
+}
+
+.contenedor__evento{
+    margin:2%;
+    width: 28%; /*Checar esto por lo de los margenes o padding, no deberia romperse*/
+}
+.contenedor__fecha{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.contenedor__fecha span{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color:#e1dede;
+    padding-bottom: 1rem;
+}
+.contenedor__info-evento {
+ display: block;
+ background-color: #698185;
+ padding: 16px;
+ border-left: 4px solid #51929c;
+ color:#e1dede;
+ 
+}
+.contenedor__info-evento div:first-child{
+    font-weight: bold;
+}
+.contenedor__info-evento div:last-child{
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
+/* .contenedor-form{
+    position: fixed;
+    background-color: white;
+    outline:2px solid black;
+} */
+
+
+.contenedor-form {
+    position: fixed;
+    display:none; /* Oculto por defecto para ser activado por js*/
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 18rem; 
+    user-select: none;
+}
+
+.formulario__label {
+    color: #516467; 
+}
+
+.formulario__input, .formulario__textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #d9ddddeb; 
+    border-radius: 5px;
+    font-size: 14px;
+    color: #303131df; /*cuando el usuario hace ingreso de algo*/
+    background-color: #ece9e9; 
+}
+
+/* Ajuste para evitar que el textarea se desborde y mantener el ancho consistente */
+.formulario__textarea {
+    width: 100%;
+    resize: none; 
+    max-width: 100%; 
+    max-height: 100px; 
+}
+
+.formulario__input:focus, .formulario__textarea:focus {
+    outline: none;
+    border-color: #698185; 
+    box-shadow: 0 0 5px rgba(105, 129, 133, 0.5);
+}
+
+.formulario__boton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px; /*falta alinear con between*/
+}
+
+.formulario__boton--guardar {
+    background-color: #698185; 
+    color: #ffffff;
+}
+
+.formulario__boton--guardar:hover {
+    background-color: #516467; 
+}
+.formulario__boton:active {
+    background-color: #4a7b7f; 
+    transform: scale(0.9);
+    transition: all 0.1s ease-in-out; /*Investigar como se hace referencis en transition a scale, all consume muchos recursos*/
+}
+
+.formulario__boton--cancelar {
+    background-color: #d9ddddeb; 
+    color: #303131df;
+}
+
+.formulario__boton--cancelar:hover {
+    background-color: #ece9e9;
+}
