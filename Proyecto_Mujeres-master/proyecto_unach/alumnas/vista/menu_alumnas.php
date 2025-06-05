@@ -39,7 +39,7 @@
         <span class="titulo-icono">Blogs</span></div>
       </a>
       <a href="psicologos.php" title="Usuario">   
-        <div class="circle-icon user"><i class="fa-solid fa-user"></i><span class="titulo-icono">Usuario</span></div>
+        <div class="circle-icon user"><i class="fa-solid fa-heart-pulse"></i><span class="titulo-icono">Psicologia</span></div>
       </a>
       <div class="btn">
         <button class="font-btn">Chat</button> 
@@ -232,7 +232,7 @@
         <div class="col-md-4 mb-4">
           <div class="card border-0">
             <!--rounded-circle de Bootstrap para hacer las imágenes redondas-->
-            <img src="../vista/img/rute-batista.jpg" class="rounded-circle mx-auto d-block mt-3" width="200" height="200" alt="Psicóloga 1">
+            <img src="https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png" class="rounded-circle mx-auto d-block mt-3" width="200" height="200" alt="Psicóloga 1">
             <!--mx-auto y d-block para centrar las imágenes--> 
             <div class="card-body">
               <h5 class="card-title">Dra. Anabel López</h5>   
@@ -243,7 +243,7 @@
         
         <div class="col-md-4 mb-4"> 
           <div class="card border-0"> 
-            <img src="https://rachelwatsondelucchi.com/wp-content/uploads/2022/07/luis-mio.jpg" class="rounded-circle mx-auto d-block mt-3" width="200" height="200" alt="Psicóloga 2">
+            <img src="https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png" class="rounded-circle mx-auto d-block mt-3" width="200" height="200" alt="Psicóloga 2">
             <div class="card-body">    
               <h5 class="card-title">Dr. Saul Pérez</h5>      
               <p class="card-text text-muted">Alj.Moguel@gmail.com</p> 
@@ -253,7 +253,7 @@
         
         <div class="col-md-4 mb-4">      
           <div class="card border-0">
-            <img src="https://s3-sa-east-1.amazonaws.com/doctoralia.com.br/doctor/3e5f98/3e5f98def2038c442d97db0938ede03c_large.jpg" class="rounded-circle mx-auto d-block mt-3" width="200" height="200" alt="Psicóloga 3">
+            <img src="https://images.icon-icons.com/2483/PNG/512/user_icon_149851.png" class="rounded-circle mx-auto d-block mt-3" width="200" height="200" alt="Psicóloga 3">
             <div class="card-body">
               <h5 class="card-title">Dra. Carla Méndez</h5>
               <p class="card-text text-muted">carla.mendez@gmail.com</p>  
