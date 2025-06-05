@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wgh@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif&display=swap'); 
+
+* {
+    box-sizing: border-box;  
+    margin: 0; 
+    padding: 0; 
+    font-family: poppins, sans-serif; 
+    font-size: 15px;
+}
+body {
+    background-color: #F9F5F0;   
+}
+
+.encabezado {
+    background-color: #ffffff;  
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 105px; 
+    padding: 5px 10%; 
+}
+.encabezado .logo-psi{
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+}
+.logo-size { 
+  height: 100px; 
+}
+.titulo{ 
+    font-family: "Nunito", sans-serif;
+    font-size: 19px; 
+    text-align: justify;
+    margin-left: 20px; 
+}
+.titulo span{
+    font-family: "Nunito", sans-serif;
+    font-size: 19px;  
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 100px;
+    display: flex;
+}
+nav ul li {
+    margin-left: 70px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black; 
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* CONTENIDO */
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    gap: 0; /* espacio entre texto e imagen */
+}
+
+.hero-content {
+    flex: 1; /* Takes up available space */
+    max-width: 50%; 
+}
+
+.decorative-line-container {
+    display: flex;
+    height: 8px; 
+    width: 150px; 
+    margin-bottom: 20px;
+}
+
+.decorative-line-container .line-segment { 
+    height: 100%;
+}
+
+.decorative-line-container .orange {
+    background-color: #EF8118;
+    width: 60%; 
+}
+
+.decorative-line-container .black {
+    background-color: #000;
+    width: 60%; 
+}
+
+.hero-content h1 {
+    font-size: 3.5em; /* Large heading */
+    font-weight: 900;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    line-height: 1.1;
+}
+
+.hero-content .highlight-orange {
+    font-size: 17px;
+    color: #EF8118;
+}
+
+.hero-content p {
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    max-width: 450px; /* Limit paragraph width for readability */
+}
+
+.hero-image-section {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center the image if it's smaller than container */
+    align-items: center;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 9px; /* Slight rounding if desired */
+    display: block; /* Removes extra space below image */
+}
+
+/* Cuadro de puntos */
+.dots-pattern {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 8px); /* Size of dots */
+    gap: 6px; /* Space between dots */
+    z-index: -1; /* Behind the text content, but above hero image section if needed */
+}
+
+.dots-pattern span {
+    width: 8px;
+    height: 8px;
+    background-color: #000; /* Color de puntos */
+    border-radius: 50%;
+}
+
+.top-dots {
+    top: 20px;  
+    left: -20px; 
+}
+
+
+/* Sección emojis */
+.section-moods {
+    display: flex; /* Para alinear los mood-item en una fila */
+    background-color: #ffd19b;
+    height: 110px; /* Altura para la franja*/
+    align-items: stretch; /* Asegura que los items llenen la altura */
+}
+
+.mood-item {
+    width: 185px; /* Ancho fijo para cada mood-item*/
+    /* height: 100%; Si section-moods tiene altura fija y los items la llenen. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mood-item i {
+    font-size: 5em; /* Tamaño del icono*/ 
+}
+.mood-item.dark {
+    background-color: #000; 
+    color: #ffffff; 
+}
+
+/* Responsive */
+@media (max-width: 992px) { 
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        max-width: 100%;
+    }
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .decorative-line-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-image-section {
+        margin-top: 30px;
+    }
+    .top-dots {
+        /* Adjust or hide dots on smaller screens if they cause layout issues */
+        display: none; 
+    }
+    .section-moods {
+         /* flex-wrap: wrap; items se envuelvan en pantallas pequeñas */
+         height: 100px; /* Altura reducida para la franja */
+    }
+    .mood-item {
+        width: 100px; /* Ancho reducido para los items */
+    }
+    .mood-item i {
+        font-size: 2.5em; /* Iconos un poco más pequeños */
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        margin-top: 15px;
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .btn-primary {
+        margin-top: 15px;
+        align-self: flex-start;
+    }
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+    .section-moods {
+        height: 80px;
+    }
+    .mood-item {  
+    width: 80px; /* Ancho reducido para los items */
+    }
+    .mood-item i {
+        font-size: 2em;
+    }
+}

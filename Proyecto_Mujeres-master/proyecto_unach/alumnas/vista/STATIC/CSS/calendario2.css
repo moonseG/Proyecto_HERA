@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+
 }
 body{
     background-color: #f9f5f0;
@@ -69,6 +70,7 @@ nav ul li a {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .calendario_info{
+    /*font-weight: bold;*/
     display: flex;
     align-items: center;
     padding: 0 2rem;
@@ -198,3 +200,4 @@ nav ul li a {
     margin-left: 8rem;
     border: 2rem solid #fecea1;
 }
+
