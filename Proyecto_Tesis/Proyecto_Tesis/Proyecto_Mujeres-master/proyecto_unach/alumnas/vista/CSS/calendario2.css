@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f9f5f0;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+} 
+.pagina-titulo{
+    text-align: center;
+    color: #EF8118;
+}
+/*ENCABEZADO*/
+.encabezado {
+    background-color: #fecea1;  
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 105px; 
+    padding: 5px 10%; 
+}
+.encabezado .logo-psi{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.logo-size { 
+  height: 100px; 
+}
+.titulo{ 
+    font-family: "Nunito", sans-serif;
+    font-size: 19px; 
+    text-align: justify;
+    margin-left: 20px; 
+}
+.titulo span{
+    font-family: "Nunito", sans-serif;
+    font-size: 19px;  
+}
+nav ul {
+    list-style: none;
+    padding:0;
+    margin-left: 300px;
+    display: flex;
+}
+nav ul li {
+    margin-left: 70px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black; 
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.calendario{
+    background: white;    
+    width: 40%;
+    max-width: 40%;
+    margin: 3rem;
+    padding: .5rem;
+}
+.calendario_item:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.calendario_info{
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 1.4rem;
+    color: blueviolet;
+    text-transform: uppercase;
+}
+.calendario_avanzar{
+    cursor: pointer;
+    color: #EF8118;
+    font-size: 2rem;
+    margin-left: auto;
+}
+.calendario_regresar{
+    cursor: pointer;
+    color: #EF8118;
+    font-size: 2rem;
+    margin-right: auto; /*para centrar la parte de la fecha*/
+}
+.calendario_semana, .calendario_fechas{
+    background-color: #fecea1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /*7 columnas (dias de la semana) con una fraccion cada una*/
+    padding-top: .6rem;
+}
+.calendario_semana{
+    background-color: antiquewhite !important;
+    font-weight: bold;
+}
+
+.calendario_mes, .calendario_anio{
+    margin-right: .3rem;
+}
+
+.calendario_item{
+    margin: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+.calendario_dia:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.today{
+    background: #fd810e;
+    color: white;
+    width: 2rem;
+    border-radius: 50%;
+    margin: auto;
+}
+.prev {
+    color: #989898;
+    font-weight: bold !important;
+}
+
+/*NAVBAR*/
+.container-nabvar{ 
+    background-color: #fecea1;  
+    height: 105px; /*ancho del navbar */ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+.navbar .fa-bars{
+    display: none;
+}
+.navbar img{
+    width: 100px;
+    display: block;
+    margin-left: 25rem;
+}
+.menu{
+    width: 100vw;
+    display: flex;
+    gap: 2rem;
+    padding-right: 5rem;
+}
+.menu li{
+    list-style: none;
+    
+}
+.menu a{/*enlaces*/
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--dark-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+.menu a::after{
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0; /*solo se muestra cuando se hace hover*/
+    transition: all .3s ease;
+}
+.menu a:hover::after{
+    opacity: 1;
+}
+.menu a:hover{
+    color: #fff
+}
+/*contenedor del calendario*/
+.contenedor-mayor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+.contenedor-mayor img{
+    width: auto;
+    height: 20rem;
+    max-width: auto;
+    border-radius: 10%;
+    margin-left: 8rem;
+    border: 2rem solid #fecea1;
+}

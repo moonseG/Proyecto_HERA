@@ -1,0 +1,47 @@
+<!--probando cambios-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar citas</title>
+    <link rel="stylesheet" href="../vista/CSS/calendario2.css">
+</head>
+<body>
+    <header>
+        <div class="container-nabvar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="../vista/menu_alumnas.html">Inicio</a></li>
+                    <li><a href="tutorias.php">Tutorias STEAM</a></li> <!-- (li<a[href="#"])*6-->
+                    <li><a href="#">Proximos</a></li>
+                </ul> 
+            </nav>
+        </div>
+    </header>
+    <h1 class="titulo">Citas psicologicas</h1>
+    <div class="calendario">
+        <div class="calendario_info">
+            <div class="calendario_regresar" id="regresar_mes">⇦</div> <!--Caracteres unicode para las flechas-->
+            <div class="calendario_mes" id="mes"></div>
+            <div class="calendario_anio" id="anio"></div>
+            <div class="calendario_avanzar" id="avanzar_mes">⇨</div>
+        </div>
+
+        <div class="calendario_semana">
+            <div class="calendario_dia calendario_item">Lun</div>
+            <div class="calendario_dia calendario_item">Mar</div>
+            <div class="calendario_dia calendario_item">Mie</div>
+            <div class="calendario_dia calendario_item">Jue</div>
+            <div class="calendario_dia calendario_item">Vie</div>
+            <div class="calendario_dia calendario_item">Sab</div>
+            <div class="calendario_dia calendario_item">Dom</div>
+        </div>
+
+        <div class="calendario_fechas" id="date"></div>
+    </div>
+        <script src="calendario2.js"></script>
+
+</body>
+</html>
