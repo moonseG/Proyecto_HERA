@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="../vista/STATIC/CSS/estilos.css">  
+    <link rel="stylesheet" href="../vista/STATIC/CSS/styles.css">  
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
      <!-- CSS de Bootstrap 5 -->
@@ -19,7 +19,7 @@
 <body> 
   <header class="header"> 
     <div class="logo"> 
-      <img src="../vista/img/LOGOUNACH-remo.png" alt="Logo" class="logo-section"> <!-- Si HTML está dentro de 'vista' --> 
+      <img src="../vista/img/logo_unach_p_fondo_claro.png" alt="Logo" class="logo-section"> <!-- Si HTML está dentro de 'vista' --> 
       <div class="divider"></div>
       <h1 class="title">Proyecto Hera</h1> 
     </div>

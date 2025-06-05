@@ -40,13 +40,13 @@ body {
     align-items: center; 
 }
 .logo-section {
-  height: 100px;
+  height: 200px;
 }
 .divider {
   width: 4px;
   height: 80px;
   background-color: #F26B60; 
-  margin: 0 20px;
+  margin: 0 20px 0 0;
 }
 .title {
   font-family: "PT Serif", serif; 
@@ -56,7 +56,7 @@ body {
 }
 
 .header .logo img {
-    height: 90px; /*tamaño del logo*/ 
+    height: 110px; /*tamaño del logo*/ 
     width: auto;
     transition: all 0.3s;
 }
